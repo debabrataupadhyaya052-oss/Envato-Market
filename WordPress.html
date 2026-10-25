@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envato Market</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Envo.css">
+</head>
+
+<body>
+    <!------------- Navigation BAR --------->
+    <!-- Top Navigation -->
+    <nav class="navbar navbar-expand-lg market-navbar">
+        <div class="container-fluid px-lg-5">
+
+            <!-- Logo -->
+            <a class="navbar-brand market-logo" href="#">
+                <i class="bi bi-layers-fill"></i>
+                Envato<span>Market</span>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav ms-lg-4 me-auto mb-3 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Home.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Discover.html">Discover</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="WordPress.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            WordPress
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="WordPress-Theam.html">WordPress Themes</a></li>
+                            <li><a class="dropdown-item" href="Plugins.html">Plugins</a></li>
+                            <li><a class="dropdown-item" href="Template-Kits.html">Template Kits</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Website-Template.html">Website Templates</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Graphics.html">Graphics</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Video.html">Video</a>
+                    </li>
+                </ul>
+
+                <!-- Search -->
+                <form class="search-box d-flex my-3 my-lg-0" id="searchForm" role="search">
+                    <input class="form-control" type="search" id="searchInput" placeholder="Search digital assets..."
+                        aria-label="Search digital assets">
+                    <button type="submit" aria-label="Search">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+
+                <!-- Right Side -->
+                <div class="nav-actions d-flex align-items-center gap-3 ms-lg-4">
+                    <a href="License.html" class="nav-link">License</a>
+                    <a href="Sigfn-In.html" class="nav-link">Sign In</a>
+                    <a href="Join-Now.html" class="join-btn">Join Now</a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Small Category Bar -->
+    <div class="category-bar">
+        <div class="container-fluid px-lg-5">
+            <div class="d-flex flex-wrap gap-4">
+                <a href="All-Iteam.html">All Items</a>
+                <a href="Web-Themes.html">Web Themes</a>
+                <a href="Presentation-Templates.html">Presentation Templates</a>
+                <a href="Stock-Photoes.html">Stock Photos</a>
+                <a href="Fonts.html">Fonts</a>
+                <a href="Audio.html">Audio</a>
+                <a href="3D-Files.html">3D Files</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Demo Search Message -->
+    <div class="container mt-4">
+        <p id="searchMessage" class="search-message" aria-live="polite"></p>
+    </div>
+
+    <!------------- Home Bar section ------------->
+
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="hero-label"><i class="bi bi-stars"></i> THE CREATIVE MARKETPLACE</span>
+
+                    <h1>Everything you need to <span>create better.</span></h1>
+
+                    <p class="hero-description">
+                        Discover thousands of premium website templates, graphics,
+                        fonts, videos and creative digital assets for your next big idea.
+                    </p>
+
+                    <form class="hero-search" id="searchForm">
+                        <i class="bi bi-search"></i>
+                        <input type="search" id="searchInput" placeholder="Search templates, graphics, fonts..."
+                            aria-label="Search digital assets">
+                        <button type="submit">Search</button>
+                    </form>
+
+                    <p class="popular-text">
+                        Popular:
+                        <a href="Website-Template.html" data-search="website">Website Templates</a>
+                        <a href="Graphics.html" data-search="graphics">Graphics</a>
+                        <a href="Vieo.html" data-search="video">Video</a>
+                    </p>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="hero-visual">
+                        <div class="floating-tag tag-one"><i class="bi bi-check-circle-fill"></i> Premium Assets</div>
+
+                        <div class="visual-main">
+                            <div class="visual-top">
+                                <span>CREATIVE STUDIO</span>
+                                <i class="bi bi-three-dots"></i>
+                            </div>
+                            <div class="visual-art">
+                                <div class="art-circle"></div>
+                                <div class="art-text">
+                                    <small>DESIGN YOUR FUTURE</small>
+                                    <h2>Make<br>Something<br>Awesome.</h2>
+                                </div>
+                                <div class="art-block"></div>
+                            </div>
+                            <div class="visual-bottom">
+                                <span>Modern Creative Kit</span>
+                                <span class="price">$24</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-tag tag-two">
+                            <i class="bi bi-lightning-charge-fill"></i> Made for Creators
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORY SECTION -->
+    <section class="category-section" id="categories">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">EXPLORE MARKETPLACE</span>
+                    <h2>Find your creative tools</h2>
+                </div>
+                <a href="products.html" class="view-link">View All <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="products.html" class="category-card" data-category="Website Templates">
+                        <div class="category-icon icon-green"><i class="bi bi-window"></i></div>
+                        <h6>Web Templates</h6>
+                        <p>2,400+ items</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="products.html" class="category-card" data-category="Graphics">
+                        <div class="category-icon icon-orange"><i class="bi bi-palette"></i></div>
+                        <h6>Graphics</h6>
+                        <p>1,800+ items</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="products.html" class="category-card" data-category="Fonts">
+                        <div class="category-icon icon-purple"><i class="bi bi-fonts"></i></div>
+                        <h6>Fonts</h6>
+                        <p>950+ items</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="products.html" class="category-card" data-category="Video">
+                        <div class="category-icon icon-blue"><i class="bi bi-play-btn"></i></div>
+                        <h6>Video</h6>
+                        <p>1,200+ items</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="products.html" class="category-card" data-category="Audio">
+                        <div class="category-icon icon-pink"><i class="bi bi-music-note-beamed"></i></div>
+                        <h6>Audio</h6>
+                        <p>700+ items</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="products.html" class="category-card" data-category="3D">
+                        <div class="category-icon icon-yellow"><i class="bi bi-box"></i></div>
+                        <h6>3D Assets</h6>
+                        <p>500+ items</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">HANDPICKED FOR YOU</span>
+                    <h2>Trending creative assets</h2>
+                </div>
+                <select id="categoryFilter" class="form-select filter-select" aria-label="Filter products">
+                    <option value="all">All Categories</option>
+                    <option value="Website Templates">Web Templates</option>
+                    <option value="Graphics">Graphics</option>
+                    <option value="Fonts">Fonts</option>
+                    <option value="Video">Video</option>
+                    <option value="Audio">Audio</option>
+                    <option value="3D">3D Assets</option>
+                </select>
+            </div>
+
+            <div class="row g-4" id="productGrid">
+
+                <div class="col-md-6 col-lg-4 product-item" data-category="Website Templates">
+                    <div class="product-card">
+                        <div class="product-image product-web">
+                            <span class="product-badge">BESTSELLER</span>
+                            <div class="web-preview">
+                                <div class="preview-nav">STUDIO <span>HOME &nbsp; WORK &nbsp; ABOUT</span></div>
+                                <div class="preview-content"><small>CREATIVE DIGITAL AGENCY</small>
+                                    <h3>Ideas into<br>reality.</h3>
+                                    <div class="preview-button">Explore Work ↗</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-type">HTML TEMPLATE</div>
+                            <h5>Studio Creative Agency</h5>
+                            <div class="product-bottom"><span><i class="bi bi-star-fill"></i> 4.9
+                                    (120)</span><strong>$18</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 product-item" data-category="Graphics">
+                    <div class="product-card">
+                        <div class="product-image product-graphic">
+                            <div class="graphic-shape shape-a"></div>
+                            <div class="graphic-shape shape-b"></div>
+                            <div class="graphic-copy"><small>CREATIVE COLLECTION</small>
+                                <h2>Bold<br>Shapes.</h2>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-type">GRAPHIC DESIGN</div>
+                            <h5>Abstract Shape Collection</h5>
+                            <div class="product-bottom"><span><i class="bi bi-star-fill"></i> 4.8
+                                    (86)</span><strong>$12</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 product-item" data-category="Fonts">
+                    <div class="product-card">
+                        <div class="product-image product-font">
+                            <small>TYPEFACE COLLECTION</small>
+                            <div class="font-big">Aa</div>
+                            <h2>Modern Sans</h2>
+                            <p>DESIGNED FOR IDEAS</p>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-type">FONT FAMILY</div>
+                            <h5>Modern Sans Typeface</h5>
+                            <div class="product-bottom"><span><i class="bi bi-star-fill"></i> 4.9
+                                    (74)</span><strong>$9</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 product-item" data-category="Video">
+                    <div class="product-card">
+                        <div class="product-image product-video">
+                            <i class="bi bi-play-circle-fill"></i>
+                            <h2>Motion<br>Stories</h2>
+                            <small>VIDEO INTRO PACK</small>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-type">VIDEO TEMPLATE</div>
+                            <h5>Motion Stories Pack</h5>
+                            <div class="product-bottom"><span><i class="bi bi-star-fill"></i> 4.7
+                                    (51)</span><strong>$16</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 product-item" data-category="Audio">
+                    <div class="product-card">
+                        <div class="product-image product-audio">
+                            <div class="sound-bars">
+                                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                            </div>
+                            <h2>Sound Lab</h2>
+                            <p>FRESH AUDIO COLLECTION</p>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-type">AUDIO PACK</div>
+                            <h5>Sound Lab Music Pack</h5>
+                            <div class="product-bottom"><span><i class="bi bi-star-fill"></i> 4.8
+                                    (92)</span><strong>$11</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 product-item" data-category="3D">
+                    <div class="product-card">
+                        <div class="product-image product-3d">
+                            <div class="cube-shape"><i class="bi bi-box-fill"></i></div>
+                            <small>3D OBJECT COLLECTION</small>
+                            <h2>Shape Space</h2>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-type">3D ASSETS</div>
+                            <h5>Shape Space 3D Kit</h5>
+                            <div class="product-bottom"><span><i class="bi bi-star-fill"></i> 4.9
+                                    (39)</span><strong>$14</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <p id="emptyMessage" class="text-center mt-4 d-none">No products found in this category.</p>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label">MADE FOR CREATORS</span>
+                <h2>More creativity. Less searching.</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="bi bi-gem"></i>
+                        <h5>Quality Assets</h5>
+                        <p>Explore creative resources designed to help your projects stand out.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="bi bi-lightning-charge"></i>
+                        <h5>Save Your Time</h5>
+                        <p>Find useful design resources and speed up your creative workflow.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="bi bi-grid"></i>
+                        <h5>Everything in One Place</h5>
+                        <p>Browse templates, graphics, fonts, video, audio and more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creative Market Hero -->
+    <main class="container-fluid hero-wrapper">
+        <section class="hero-banner">
+
+            <!-- Background dots -->
+            <div class="dot-pattern"></div>
+
+            <!-- Left content -->
+            <div class="hero-content">
+                <h1>
+                    <span class="green-text">Get unlimited downloads</span><br>
+                    across <a href="assets.html">Web Templates</a>,
+                    <a href="assets.html">Stock Video</a>,<br class="desktop-break">
+                    <a href="assets.html">Creative Assets</a> and more.
+                </h1>
+
+                <p>The world's broadest stock catalog with purpose-built AI.</p>
+
+                <a href="assets.html" class="start-btn">
+                    Start now <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div>
+
+            <!-- Right image cards -->
+            <div class="cards-area" id="assets">
+
+                <div class="asset-card sound-card">
+                    <div class="card-label"><i class="bi bi-volume-up-fill"></i> Sound Effects</div>
+                    <div class="card-image"></div>
+                </div>
+
+                <div class="asset-card web-card">
+                    <div class="card-label"><i class="bi bi-globe"></i> Web Templates</div>
+                    <div class="card-image"></div>
+                </div>
+
+                <div class="asset-card video-template-card">
+                    <div class="card-label"><i class="bi bi-camera-video-fill"></i> Video Templates</div>
+                    <div class="card-image"></div>
+                </div>
+
+                <div class="asset-card video-card">
+                    <div class="card-label"><i class="bi bi-camera-video-fill"></i> Video</div>
+                    <div class="card-image"></div>
+                </div>
+
+                <div class="asset-card music-card">
+                    <div class="card-label"><i class="bi bi-music-note-beamed"></i> Music</div>
+                    <div class="card-image"></div>
+                </div>
+
+                <div class="asset-card ai-card">
+                    <div class="card-label"><i class="bi bi-stars"></i> AI Tools</div>
+                    <div class="card-image"></div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!------------- WordPress Bar --------------->
+    <!-- HERO SECTION -->
+    <section class="wp-hero" id="home">
+        <div class="hero-dots"></div>
+
+        <div class="container position-relative">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6">
+                    <span class="eyebrow"><i class="bi bi-stars"></i> WORDPRESS THEME MARKETPLACE</span>
+
+                    <h1>
+                        Build a better website with
+                        <span>WordPress Themes.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Discover beautifully designed WordPress themes for business,
+                        portfolios, blogs and online stores.
+                    </p>
+
+                    <form class="theme-search" id="searchForm">
+                        <i class="bi bi-search"></i>
+                        <input type="search" id="searchInput" placeholder="Search WordPress themes..."
+                            aria-label="Search themes">
+                        <button type="submit">Search</button>
+                    </form>
+
+                    <div class="popular-searches">
+                        <span>Popular:</span>
+                        <button type="button" data-search="business">Business</button>
+                        <button type="button" data-search="portfolio">Portfolio</button>
+                        <button type="button" data-search="shop">Shop</button>
+                    </div>
+
+                    <div class="hero-benefits">
+                        <div><i class="bi bi-check-circle-fill"></i> Creative layouts</div>
+                        <div><i class="bi bi-check-circle-fill"></i> Responsive designs</div>
+                        <div><i class="bi bi-check-circle-fill"></i> Flexible customization</div>
+                    </div>
+
+
+                    <a href="themes.html" class="explore-btn">
+                        Explore Themes <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="theme-showcase">
+                        <div class="floating-badge badge-top">
+                            <i class="bi bi-check-circle-fill"></i> Responsive Designs
+                        </div>
+
+                        <div class="theme-window">
+                            <div class="window-header">
+                                <div class="window-dots"><i></i><i></i><i></i></div>
+                                <span>PREVIEW WEBSITE</span>
+                            </div>
+
+                            <div class="preview-site">
+                                <div class="preview-nav">
+                                    <strong>CREATIVE.</strong>
+                                    <span>HOME &nbsp; ABOUT &nbsp; WORK</span>
+                                </div>
+                                <div class="preview-hero">
+                                    <small>DESIGN YOUR DIGITAL FUTURE</small>
+                                    <h2>Make Your<br>Brand Stand Out.</h2>
+                                    <p>Beautiful websites begin with great design.</p>
+                                    <span class="preview-button">Discover More ↗</span>
+                                </div>
+                                <div class="preview-bottom">
+                                    <span>01 / CREATIVE STUDIO</span>
+                                    <span>WordPress Theme</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="floating-badge badge-bottom">
+                            <i class="bi bi-lightning-charge-fill"></i> Easy to Customize
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORY SECTION -->
+    <section class="wp-categories section-padding" id="categories">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">FIND YOUR STYLE</span>
+                    <h2>Explore by category</h2>
+                </div>
+                <p>Start with a theme that fits your vision.</p>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <button class="category-box" data-category="Business">
+                        <i class="bi bi-building"></i>
+                        <strong>Business</strong>
+                        <small>Corporate websites</small>
+                    </button>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <button class="category-box" data-category="Portfolio">
+                        <i class="bi bi-grid-1x2"></i>
+                        <strong>Portfolio</strong>
+                        <small>Creative showcases</small>
+                    </button>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <button class="category-box" data-category="Shop">
+                        <i class="bi bi-bag"></i>
+                        <strong>Shop</strong>
+                        <small>Online stores</small>
+                    </button>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <button class="category-box" data-category="Blog">
+                        <i class="bi bi-journal-richtext"></i>
+                        <strong>Blog</strong>
+                        <small>Stories and articles</small>
+                    </button>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <button class="category-box" data-category="Restaurant">
+                        <i class="bi bi-cup-hot"></i>
+                        <strong>Restaurant</strong>
+                        <small>Food and dining</small>
+                    </button>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <button class="category-box" data-category="Agency">
+                        <i class="bi bi-lightning-charge"></i>
+                        <strong>Agency</strong>
+                        <small>Digital services</small>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THEME CATEGORIES -->
+    <section class="categories-section" id="features">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">BROWSE COLLECTIONS</span>
+                    <h2>Find your perfect theme</h2>
+                </div>
+                <a href="themes.html" class="text-link">Browse all <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <a href="themes.html" class="category-card" data-category="business">
+                        <span class="category-icon green"><i class="bi bi-building"></i></span>
+                        <h5>Business</h5>
+                        <p>Professional websites</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="themes.html" class="category-card" data-category="portfolio">
+                        <span class="category-icon purple"><i class="bi bi-person-workspace"></i></span>
+                        <h5>Portfolio</h5>
+                        <p>Showcase your work</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="themes.html" class="category-card" data-category="blog">
+                        <span class="category-icon orange"><i class="bi bi-journal-richtext"></i></span>
+                        <h5>Blog & Magazine</h5>
+                        <p>Share your stories</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="themes.html" class="category-card" data-category="shop">
+                        <span class="category-icon blue"><i class="bi bi-bag"></i></span>
+                        <h5>Online Store</h5>
+                        <p>Build your shop</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THEMES PRODUCT GRID -->
+    <section class="wp-themes section-padding" id="themes">
+        <div class="container" id="featured">
+            <div class="section-heading themes-heading">
+                <div>
+                    <span class="section-kicker">HANDPICKED DESIGNS</span>
+                    <h2>WordPress themes</h2>
+                    <p>Explore a collection of modern website design concepts.</p>
+                </div>
+
+                <select class="form-select theme-filter" id="themeFilter" aria-label="Filter themes">
+                    <option value="all">All Categories</option>
+                    <option value="Business">Business</option>
+                    <option value="Portfolio">Portfolio</option>
+                    <option value="Shop">Shop</option>
+                    <option value="Blog">Blog</option>
+                    <option value="Restaurant">Restaurant</option>
+                    <option value="Agency">Agency</option>
+                </select>
+            </div>
+
+            <div class="row g-4" id="themeGrid">
+
+                <!-- Theme 1 -->
+                <div class="col-md-6 col-lg-4 theme-item" data-category="Business">
+                    <article class="theme-card">
+                        <div class="theme-image image-business">
+                            <div class="demo-browser">
+                                <div class="demo-top"><b>NEXORA</b><span>Home　About　Services</span></div>
+                                <div class="demo-business-content">
+                                    <small>STRATEGY · INNOVATION</small>
+                                    <h3>Ideas that<br>move business.</h3>
+                                    <span class="demo-cta">Discover More ↗</span>
+                                </div>
+                                <div class="demo-business-art"><span></span><i></i></div>
+                            </div>
+                            <span class="theme-badge">BESTSELLER STYLE</span>
+                            <button class="quick-preview" data-title="Nexora Business Theme">
+                                <i class="bi bi-eye"></i> Quick Preview
+                            </button>
+                        </div>
+                        <div class="theme-info">
+                            <div class="theme-type">BUSINESS / CORPORATE</div>
+                            <h3>Nexora — Business WordPress Theme</h3>
+                            <div class="theme-rating"><span><i class="bi bi-star-fill"></i> 4.9
+                                    <small>(120)</small></span><strong>$49</strong></div>
+                            <button class="details-btn" data-title="Nexora Business WordPress Theme">View Details <i
+                                    class="bi bi-arrow-up-right"></i></button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Theme 2 -->
+                <div class="col-md-6 col-lg-4 theme-item" data-category="Portfolio">
+                    <article class="theme-card">
+                        <div class="theme-image image-portfolio">
+                            <div class="portfolio-demo">
+                                <small>INDEPENDENT CREATIVE STUDIO</small>
+                                <h3>Less ordinary.<br><em>More you.</em></h3>
+                                <div class="portfolio-shapes"><span></span><span></span><span></span></div>
+                                <p>SELECTED WORK — 2026</p>
+                            </div>
+                            <span class="theme-badge">CREATIVE PICK</span>
+                            <button class="quick-preview" data-title="Forma Portfolio Theme"><i class="bi bi-eye"></i>
+                                Quick Preview</button>
+                        </div>
+                        <div class="theme-info">
+                            <div class="theme-type">PORTFOLIO / CREATIVE</div>
+                            <h3>Forma — Creative Portfolio Theme</h3>
+                            <div class="theme-rating"><span><i class="bi bi-star-fill"></i> 4.8
+                                    <small>(86)</small></span><strong>$39</strong></div>
+                            <button class="details-btn" data-title="Forma Creative Portfolio Theme">View Details <i
+                                    class="bi bi-arrow-up-right"></i></button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Theme 3 -->
+                <div class="col-md-6 col-lg-4 theme-item" data-category="Shop">
+                    <article class="theme-card">
+                        <div class="theme-image image-shop">
+                            <div class="shop-demo">
+                                <div class="shop-demo-nav">OBJECTS <span>COLLECTIONS　ABOUT</span></div>
+                                <div class="shop-demo-body">
+                                    <div><small>THE EVERYDAY EDIT</small>
+                                        <h3>Good things.<br>Thoughtfully made.</h3><button type="button">SHOP
+                                            COLLECTION</button>
+                                    </div>
+                                    <img src="./Assets/Minimal lifestyle product_flg.avif"
+                                        alt="Minimal lifestyle product">
+                                </div>
+                            </div>
+                            <span class="theme-badge">ONLINE STORE</span>
+                            <button class="quick-preview" data-title="Forma Shop Theme"><i class="bi bi-eye"></i> Quick
+                                Preview</button>
+                        </div>
+                        <div class="theme-info">
+                            <div class="theme-type">ECOMMERCE / SHOP</div>
+                            <h3>Objects — Minimal Shop Theme</h3>
+                            <div class="theme-rating"><span><i class="bi bi-star-fill"></i> 4.9
+                                    <small>(143)</small></span><strong>$59</strong></div>
+                            <button class="details-btn" data-title="Objects Minimal Shop Theme">View Details <i
+                                    class="bi bi-arrow-up-right"></i></button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Theme 4 -->
+                <div class="col-md-6 col-lg-4 theme-item" data-category="Blog">
+                    <article class="theme-card">
+                        <div class="theme-image image-blog">
+                            <img src="./Assets/Editorial desk and notebook _flg.avif" alt="Editorial desk and notebook">
+                            <div class="blog-overlay"><small>THE DAILY JOURNAL</small>
+                                <h3>Stories worth<br>staying for.</h3><span>READ THE JOURNAL ↗</span>
+                            </div>
+                            <span class="theme-badge">EDITORIAL</span>
+                            <button class="quick-preview" data-title="Journal Blog Theme"><i class="bi bi-eye"></i>
+                                Quick Preview</button>
+                        </div>
+                        <div class="theme-info">
+                            <div class="theme-type">BLOG / MAGAZINE</div>
+                            <h3>Journal — Editorial Blog Theme</h3>
+                            <div class="theme-rating"><span><i class="bi bi-star-fill"></i> 4.7
+                                    <small>(65)</small></span><strong>$35</strong></div>
+                            <button class="details-btn" data-title="Journal Editorial Blog Theme">View Details <i
+                                    class="bi bi-arrow-up-right"></i></button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Theme 5 -->
+                <div class="col-md-6 col-lg-4 theme-item" data-category="Restaurant">
+                    <article class="theme-card">
+                        <div class="theme-image image-restaurant">
+                            <img src="./Assets/Elegant restaurant dining_flg.avif" alt="Elegant restaurant dining">
+                            <div class="restaurant-overlay"><small>FRESH · SEASONAL · LOCAL</small>
+                                <h3>Gather around<br>the table.</h3><span>EXPLORE MENU ↗</span>
+                            </div>
+                            <span class="theme-badge">HOSPITALITY</span>
+                            <button class="quick-preview" data-title="Gather Restaurant Theme"><i class="bi bi-eye"></i>
+                                Quick Preview</button>
+                        </div>
+                        <div class="theme-info">
+                            <div class="theme-type">RESTAURANT / FOOD</div>
+                            <h3>Gather — Restaurant Theme</h3>
+                            <div class="theme-rating"><span><i class="bi bi-star-fill"></i> 4.8
+                                    <small>(92)</small></span><strong>$45</strong></div>
+                            <button class="details-btn" data-title="Gather Restaurant Theme">View Details <i
+                                    class="bi bi-arrow-up-right"></i></button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Theme 6 -->
+                <div class="col-md-6 col-lg-4 theme-item" data-category="Agency">
+                    <article class="theme-card">
+                        <div class="theme-image image-agency">
+                            <div class="agency-demo">
+                                <div class="agency-nav">SHIFT® <span>WORK　STUDIO　CONTACT</span></div>
+                                <small>INDEPENDENT DIGITAL AGENCY</small>
+                                <h3>Make noise.<br>Make <span>meaning.</span></h3>
+                                <div class="agency-circle"><i class="bi bi-arrow-up-right"></i></div>
+                            </div>
+                            <span class="theme-badge">AGENCY</span>
+                            <button class="quick-preview" data-title="Shift Agency Theme"><i class="bi bi-eye"></i>
+                                Quick Preview</button>
+                        </div>
+                        <div class="theme-info">
+                            <div class="theme-type">AGENCY / DIGITAL</div>
+                            <h3>Shift — Digital Agency Theme</h3>
+                            <div class="theme-rating"><span><i class="bi bi-star-fill"></i> 4.9
+                                    <small>(110)</small></span><strong>$55</strong></div>
+                            <button class="details-btn" data-title="Shift Digital Agency Theme">View Details <i
+                                    class="bi bi-arrow-up-right"></i></button>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+
+            <div id="noThemes" class="no-themes d-none">
+                <i class="bi bi-search"></i>
+                <h4>No themes found</h4>
+                <p>Try another keyword or select a different category.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- THEME PRODUCTS -->
+    <section class="themes-section" id="themes">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">POPULAR WORDPRESS THEMES</span>
+                    <h2>Designed to inspire</h2>
+                </div>
+
+                <select id="themeFilter" class="form-select theme-filter" aria-label="Filter themes">
+                    <option value="all">All Themes</option>
+                    <option value="business">Business</option>
+                    <option value="portfolio">Portfolio</option>
+                    <option value="blog">Blog</option>
+                    <option value="shop">Shop</option>
+                </select>
+            </div>
+
+            <div class="row g-4" id="themeGrid">
+
+                <div class="col-md-6 col-lg-4 theme-item" data-category="business">
+                    <article class="theme-card">
+                        <div class="theme-image business-preview">
+                            <div class="mock-navbar"><strong>NEXORA</strong><span>HOME &nbsp; SERVICES &nbsp;
+                                    CONTACT</span></div>
+                            <div class="mock-content">
+                                <small>GROW YOUR BUSINESS</small>
+                                <h3>Ideas that<br>move forward.</h3>
+                                <span class="mock-btn">Get Started</span>
+                            </div>
+                        </div>
+                        <div class="theme-info">
+                            <span class="theme-type">BUSINESS THEME</span>
+                            <h5>Nexora Business</h5>
+                            <div class="theme-meta"><span><i class="bi bi-star-fill"></i> 4.9
+                                    rating</span><strong>$29</strong></div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 theme-item" data-category="portfolio">
+                    <article class="theme-card">
+                        <div class="theme-image portfolio-preview">
+                            <span class="portfolio-label">DESIGN PORTFOLIO</span>
+                            <h3>Less ordinary.<br>More creative.</h3>
+                            <div class="portfolio-circle"></div>
+                            <div class="portfolio-square"></div>
+                        </div>
+                        <div class="theme-info">
+                            <span class="theme-type">PORTFOLIO THEME</span>
+                            <h5>Forma Creative</h5>
+                            <div class="theme-meta"><span><i class="bi bi-star-fill"></i> 4.8
+                                    rating</span><strong>$24</strong></div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 theme-item" data-category="blog">
+                    <article class="theme-card">
+                        <div class="theme-image blog-preview">
+                            <span>THE JOURNAL</span>
+                            <h3>Stories worth<br>sharing.</h3>
+                            <p>Ideas • Culture • Lifestyle</p>
+                            <div class="blog-lines"><i></i><i></i><i></i></div>
+                        </div>
+                        <div class="theme-info">
+                            <span class="theme-type">BLOG THEME</span>
+                            <h5>Journal Editorial</h5>
+                            <div class="theme-meta"><span><i class="bi bi-star-fill"></i> 4.7
+                                    rating</span><strong>$19</strong></div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 theme-item" data-category="shop">
+                    <article class="theme-card">
+                        <div class="theme-image shop-preview">
+                            <small>NEW COLLECTION</small>
+                            <h3>Everyday<br>Essentials.</h3>
+                            <span class="shop-pill">SHOP NOW ↗</span>
+                            <div class="shop-shape"></div>
+                        </div>
+                        <div class="theme-info">
+                            <span class="theme-type">ECOMMERCE THEME</span>
+                            <h5>Minimal Shop</h5>
+                            <div class="theme-meta"><span><i class="bi bi-star-fill"></i> 4.9
+                                    rating</span><strong>$32</strong></div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+
+            <p id="emptyMessage" class="text-center mt-4 d-none">
+                No themes found. Try another category.
+            </p>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="wp-cta">
+        <div class="container">
+            <div class="cta-inner">
+                <div>
+                    <span class="section-kicker">YOUR NEXT WEBSITE STARTS HERE</span>
+                    <h2>Great design. Strong first impression.</h2>
+                    <p>Find a theme concept that fits your next project.</p>
+                </div>
+                <a href="#themes" class="cta-button">Explore Themes <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREVIEW MODAL -->
+    <div class="modal fade" id="themeModal" tabindex="-1" aria-labelledby="themeModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content theme-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="themeModalTitle">Theme Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-icon"><i class="bi bi-wordpress"></i></div>
+                    <p>This is a frontend demo theme card. Connect a real product page or theme preview URL to open a
+                        full demo.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-dark" data-bs-dismiss="modal">Close Preview</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------- Footer Tag section --------------->
+    <!-- PREMIUM ENVATO FOOTER -->
+    <footer class="lux-footer">
+
+        <!-- Newsletter -->
+        <div class="container">
+            <div class="lux-newsletter">
+                <div class="newsletter-content">
+                    <span class="lux-eyebrow">THE CREATIVE CLUB</span>
+                    <h2>Make your next idea<br><span>extraordinary.</span></h2>
+                    <p>Get creative inspiration, new resources and exclusive updates in your
+                        inbox.</p>
+                </div>
+
+                <form class="newsletter-form" id="newsletterForm">
+                    <label for="newsletterEmail">Join our creative community</label>
+                    <div class="newsletter-input">
+                        <input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+                        <button type="submit" aria-label="Subscribe">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </div>
+                    <small id="newsletterMessage">No spam. Just creative inspiration.</small>
+                </form>
+            </div>
+
+            <div class="lux-divider"></div>
+
+            <!-- Main footer columns -->
+            <div class="row gy-5 lux-footer-main">
+
+                <div class="col-lg-4 col-md-12">
+                    <a href="lux-logo.html" class="lux-logo">
+                        <span class="logo-symbol"><i class="bi bi-gem"></i></span>
+                        <span>envato<small>market</small></span>
+                    </a>
+
+                    <p class="lux-description">
+                        A world of creative possibilities. Discover premium digital
+                        assets and tools that help transform imagination into reality.
+                    </p>
+
+                    <div class="lux-socials">
+                        <a href="https://www.instagram.com/" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" aria-label="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+
+                    <div class="trust-note">
+                        <i class="bi bi-shield-check"></i>
+                        <span>Made for people who create.</span>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-2 col-md-4">
+                    <h5>Discover</h5>
+                    <ul>
+                        <li><a href="Web-Templetes.html">Web Templates</a></li>
+                        <li><a href="Wordpress.html">WordPress</a></li>
+                        <li><a href="Video.html">Video</a></li>
+                        <li><a href="Graphics.html">Graphics</a></li>
+                        <li><a href="Audio.html">Audio</a></li>
+                        <li><a href="3D-Assets.html">3D Assets</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 col-md-4">
+                    <h5>Marketplace</h5>
+                    <ul>
+                        <li><a href="Browse-Items.html">Browse Items</a></li>
+                        <li><a href="Featured-Files.html">Featured Files</a></li>
+                        <li><a href="New-Releases.html">New Releases</a></li>
+                        <li><a href="Popular-Items.html">Popular Items</a></li>
+                        <li><a href="Creative-Tools.html">Creative Tools</a></li>
+                        <li><a href="Collection.html">Collections</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 col-md-4">
+                    <h5>Community</h5>
+                    <ul>
+                        <li><a href="Become-an-Author.html">Become an Author</a></li>
+                        <li><a href="Creator-stories.html">Creator Stories</a></li>
+                        <li><a href="Forums.html">Forums</a></li>
+                        <li><a href="Help-Center.html">Help Center</a></li>
+                        <li><a href="Contact-Support.html">Contact Support</a></li>
+                        <li><a href="Our-Community.html">Our Community</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 col-md-4">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="OurMission.html">Our Mission</a></li>
+                        <li><a href="Careers.html">Careers</a></li>
+                        <li><a href="Affiliate-Program.html">Affiliate Program</a></li>
+                        <li><a href="Privacy-Policy.html">Privacy Policy</a></li>
+                        <li><a href="erms & Conditions.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Premium bottom bar -->
+            <div class="lux-bottom">
+                <p>© <span id="currentYear"></span> Envato Market Demo. All rights reserved.</p>
+
+                <div class="bottom-links">
+                    <a href="Privacy.html">Privacy</a>
+                    <a href="Terms.html">Terms</a>
+                    <a href="Cookies.html">Cookies</a>
+                </div>
+
+                <button class="back-top" id="backToTop">
+                    Back to top <i class="bi bi-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="Emarket.js"></script>
+</body>
+
+</html>

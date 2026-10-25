@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envato Market</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Envo.css">
+</head>
+
+<body>
+    <!------------- Navigation BAR --------->
+    <!-- Top Navigation -->
+    <nav class="navbar navbar-expand-lg market-navbar">
+        <div class="container-fluid px-lg-5">
+
+            <!-- Logo -->
+            <a class="navbar-brand market-logo" href="#">
+                <i class="bi bi-layers-fill"></i>
+                Envato<span>Market</span>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav ms-lg-4 me-auto mb-3 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Home.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Discover.html">Discover</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="WordPress.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            WordPress
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="WordPress-Theam.html">WordPress Themes</a></li>
+                            <li><a class="dropdown-item" href="Plugins.html">Plugins</a></li>
+                            <li><a class="dropdown-item" href="Template-Kits.html">Template Kits</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Website-Template.html">Website Templates</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Graphics.html">Graphics</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Video.html">Video</a>
+                    </li>
+                </ul>
+
+                <!-- Search -->
+                <form class="search-box d-flex my-3 my-lg-0" id="searchForm" role="search">
+                    <input class="form-control" type="search" id="searchInput" placeholder="Search digital assets..."
+                        aria-label="Search digital assets">
+                    <button type="submit" aria-label="Search">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+
+                <!-- Right Side -->
+                <div class="nav-actions d-flex align-items-center gap-3 ms-lg-4">
+                    <a href="License.html" class="nav-link">License</a>
+                    <a href="Sigfn-In.html" class="nav-link">Sign In</a>
+                    <a href="Join-Now.html" class="join-btn">Join Now</a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Small Category Bar -->
+    <div class="category-bar">
+        <div class="container-fluid px-lg-5">
+            <div class="d-flex flex-wrap gap-4">
+                <a href="All-Iteam.html">All Items</a>
+                <a href="Web-Themes.html">Web Themes</a>
+                <a href="Presentation-Templates.html">Presentation Templates</a>
+                <a href="Stock-Photoes.html">Stock Photos</a>
+                <a href="Fonts.html">Fonts</a>
+                <a href="Audio.html">Audio</a>
+                <a href="3D-Files.html">3D Files</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Demo Search Message -->
+    <div class="container mt-4">
+        <p id="searchMessage" class="search-message" aria-live="polite"></p>
+    </div>
+
+    <!------------- Home Bar section ------------->
+
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="hero-label"><i class="bi bi-stars"></i> THE CREATIVE MARKETPLACE</span>
+
+                    <h1>Everything you need to <span>create better.</span></h1>
+
+                    <p class="hero-description">
+                        Discover thousands of premium website templates, graphics,
+                        fonts, videos and creative digital assets for your next big idea.
+                    </p>
+
+                    <form class="hero-search" id="searchForm">
+                        <i class="bi bi-search"></i>
+                        <input type="search" id="searchInput" placeholder="Search templates, graphics, fonts..."
+                            aria-label="Search digital assets">
+                        <button type="submit">Search</button>
+                    </form>
+
+                    <p class="popular-text">
+                        Popular:
+                        <a href="Website-Template.html" data-search="website">Website Templates</a>
+                        <a href="Graphics.html" data-search="graphics">Graphics</a>
+                        <a href="Vieo.html" data-search="video">Video</a>
+                    </p>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="hero-visual">
+                        <div class="floating-tag tag-one"><i class="bi bi-check-circle-fill"></i> Premium Assets</div>
+
+                        <div class="visual-main">
+                            <div class="visual-top">
+                                <span>CREATIVE STUDIO</span>
+                                <i class="bi bi-three-dots"></i>
+                            </div>
+                            <div class="visual-art">
+                                <div class="art-circle"></div>
+                                <div class="art-text">
+                                    <small>DESIGN YOUR FUTURE</small>
+                                    <h2>Make<br>Something<br>Awesome.</h2>
+                                </div>
+                                <div class="art-block"></div>
+                            </div>
+                            <div class="visual-bottom">
+                                <span>Modern Creative Kit</span>
+                                <span class="price">$24</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-tag tag-two">
+                            <i class="bi bi-lightning-charge-fill"></i> Made for Creators
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORY SECTION -->
+    <section class="category-section" id="categories">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">EXPLORE MARKETPLACE</span>
+                    <h2>Find your creative tools</h2>
+                </div>
+                <a href="products.html" class="view-link">View All <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="products.html" class="category-card" data-category="Website Templates">
+                        <div class="category-icon icon-green"><i class="bi bi-window"></i></div>
+                        <h6>Web Templates</h6>
+                        <p>2,400+ items</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="products.html" class="category-card" data-category="Graphics">
+                        <div class="category-icon icon-orange"><i class="bi bi-palette"></i></div>
+                        <h6>Graphics</h6>
+                        <p>1,800+ items</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="products.html" class="category-card" data-category="Fonts">
+                        <div class="category-icon icon-purple"><i class="bi bi-fonts"></i></div>
+                        <h6>Fonts</h6>
+                        <p>950+ items</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="products.html" class="category-card" data-category="Video">
+                        <div class="category-icon icon-blue"><i class="bi bi-play-btn"></i></div>
+                        <h6>Video</h6>
+                        <p>1,200+ items</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="products.html" class="category-card" data-category="Audio">
+                        <div class="category-icon icon-pink"><i class="bi bi-music-note-beamed"></i></div>
+                        <h6>Audio</h6>
+                        <p>700+ items</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="products.html" class="category-card" data-category="3D">
+                        <div class="category-icon icon-yellow"><i class="bi bi-box"></i></div>
+                        <h6>3D Assets</h6>
+                        <p>500+ items</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">HANDPICKED FOR YOU</span>
+                    <h2>Trending creative assets</h2>
+                </div>
+                <select id="categoryFilter" class="form-select filter-select" aria-label="Filter products">
+                    <option value="all">All Categories</option>
+                    <option value="Website Templates">Web Templates</option>
+                    <option value="Graphics">Graphics</option>
+                    <option value="Fonts">Fonts</option>
+                    <option value="Video">Video</option>
+                    <option value="Audio">Audio</option>
+                    <option value="3D">3D Assets</option>
+                </select>
+            </div>
+
+            <div class="row g-4" id="productGrid">
+
+                <div class="col-md-6 col-lg-4 product-item" data-category="Website Templates">
+                    <div class="product-card">
+                        <div class="product-image product-web">
+                            <span class="product-badge">BESTSELLER</span>
+                            <div class="web-preview">
+                                <div class="preview-nav">STUDIO <span>HOME &nbsp; WORK &nbsp; ABOUT</span></div>
+                                <div class="preview-content"><small>CREATIVE DIGITAL AGENCY</small>
+                                    <h3>Ideas into<br>reality.</h3>
+                                    <div class="preview-button">Explore Work ↗</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-type">HTML TEMPLATE</div>
+                            <h5>Studio Creative Agency</h5>
+                            <div class="product-bottom"><span><i class="bi bi-star-fill"></i> 4.9
+                                    (120)</span><strong>$18</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 product-item" data-category="Graphics">
+                    <div class="product-card">
+                        <div class="product-image product-graphic">
+                            <div class="graphic-shape shape-a"></div>
+                            <div class="graphic-shape shape-b"></div>
+                            <div class="graphic-copy"><small>CREATIVE COLLECTION</small>
+                                <h2>Bold<br>Shapes.</h2>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-type">GRAPHIC DESIGN</div>
+                            <h5>Abstract Shape Collection</h5>
+                            <div class="product-bottom"><span><i class="bi bi-star-fill"></i> 4.8
+                                    (86)</span><strong>$12</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 product-item" data-category="Fonts">
+                    <div class="product-card">
+                        <div class="product-image product-font">
+                            <small>TYPEFACE COLLECTION</small>
+                            <div class="font-big">Aa</div>
+                            <h2>Modern Sans</h2>
+                            <p>DESIGNED FOR IDEAS</p>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-type">FONT FAMILY</div>
+                            <h5>Modern Sans Typeface</h5>
+                            <div class="product-bottom"><span><i class="bi bi-star-fill"></i> 4.9
+                                    (74)</span><strong>$9</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 product-item" data-category="Video">
+                    <div class="product-card">
+                        <div class="product-image product-video">
+                            <i class="bi bi-play-circle-fill"></i>
+                            <h2>Motion<br>Stories</h2>
+                            <small>VIDEO INTRO PACK</small>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-type">VIDEO TEMPLATE</div>
+                            <h5>Motion Stories Pack</h5>
+                            <div class="product-bottom"><span><i class="bi bi-star-fill"></i> 4.7
+                                    (51)</span><strong>$16</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 product-item" data-category="Audio">
+                    <div class="product-card">
+                        <div class="product-image product-audio">
+                            <div class="sound-bars">
+                                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                            </div>
+                            <h2>Sound Lab</h2>
+                            <p>FRESH AUDIO COLLECTION</p>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-type">AUDIO PACK</div>
+                            <h5>Sound Lab Music Pack</h5>
+                            <div class="product-bottom"><span><i class="bi bi-star-fill"></i> 4.8
+                                    (92)</span><strong>$11</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 product-item" data-category="3D">
+                    <div class="product-card">
+                        <div class="product-image product-3d">
+                            <div class="cube-shape"><i class="bi bi-box-fill"></i></div>
+                            <small>3D OBJECT COLLECTION</small>
+                            <h2>Shape Space</h2>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-type">3D ASSETS</div>
+                            <h5>Shape Space 3D Kit</h5>
+                            <div class="product-bottom"><span><i class="bi bi-star-fill"></i> 4.9
+                                    (39)</span><strong>$14</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <p id="emptyMessage" class="text-center mt-4 d-none">No products found in this category.</p>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label">MADE FOR CREATORS</span>
+                <h2>More creativity. Less searching.</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="bi bi-gem"></i>
+                        <h5>Quality Assets</h5>
+                        <p>Explore creative resources designed to help your projects stand out.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="bi bi-lightning-charge"></i>
+                        <h5>Save Your Time</h5>
+                        <p>Find useful design resources and speed up your creative workflow.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="bi bi-grid"></i>
+                        <h5>Everything in One Place</h5>
+                        <p>Browse templates, graphics, fonts, video, audio and more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creative Market Hero -->
+    <main class="container-fluid hero-wrapper">
+        <section class="hero-banner">
+
+            <!-- Background dots -->
+            <div class="dot-pattern"></div>
+
+            <!-- Left content -->
+            <div class="hero-content">
+                <h1>
+                    <span class="green-text">Get unlimited downloads</span><br>
+                    across <a href="assets.html">Web Templates</a>,
+                    <a href="assets.html">Stock Video</a>,<br class="desktop-break">
+                    <a href="assets.html">Creative Assets</a> and more.
+                </h1>
+
+                <p>The world's broadest stock catalog with purpose-built AI.</p>
+
+                <a href="assets.html" class="start-btn">
+                    Start now <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div>
+
+            <!-- Right image cards -->
+            <div class="cards-area" id="assets">
+
+                <div class="asset-card sound-card">
+                    <div class="card-label"><i class="bi bi-volume-up-fill"></i> Sound Effects</div>
+                    <div class="card-image"></div>
+                </div>
+
+                <div class="asset-card web-card">
+                    <div class="card-label"><i class="bi bi-globe"></i> Web Templates</div>
+                    <div class="card-image"></div>
+                </div>
+
+                <div class="asset-card video-template-card">
+                    <div class="card-label"><i class="bi bi-camera-video-fill"></i> Video Templates</div>
+                    <div class="card-image"></div>
+                </div>
+
+                <div class="asset-card video-card">
+                    <div class="card-label"><i class="bi bi-camera-video-fill"></i> Video</div>
+                    <div class="card-image"></div>
+                </div>
+
+                <div class="asset-card music-card">
+                    <div class="card-label"><i class="bi bi-music-note-beamed"></i> Music</div>
+                    <div class="card-image"></div>
+                </div>
+
+                <div class="asset-card ai-card">
+                    <div class="card-label"><i class="bi bi-stars"></i> AI Tools</div>
+                    <div class="card-image"></div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!------------- Video Section --------------->
+    <!-- HERO -->
+    <section class="video-hero" id="home">
+        <div class="hero-glow glow-one"></div>
+        <div class="hero-glow glow-two"></div>
+
+        <div class="container position-relative">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6">
+                    <span class="eyebrow"><i class="bi bi-play-circle-fill"></i> YOUR NEXT
+                        CREATIVE FRAME</span>
+
+                    <h1>Every great story starts with a <span>single frame.</span></h1>
+
+                    <p class="hero-text">
+                        Explore cinematic stock footage, professional video templates,
+                        transitions and motion graphics to bring your ideas to life.
+                    </p>
+
+                    <form class="video-search" id="videoSearchForm">
+                        <i class="bi bi-search"></i>
+                        <input type="search" id="videoSearch" placeholder="Search videos, effects, templates..."
+                            aria-label="Search video assets">
+                        <button type="submit">Search</button>
+                    </form>
+
+                    <div class="popular-searches">
+                        <span>Popular:</span>
+                        <button type="button" data-search="Cinematic">Cinematic</button>
+                        <button type="button" data-search="Transitions">Transitions</button>
+                        <button type="button" data-search="Logo">Logo</button>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div><strong>4K</strong><small>Video quality</small></div>
+                        <div><strong>HD</strong><small>Stock footage</small></div>
+                        <div><strong>∞</strong><small>Creative ideas</small></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="video-showcase">
+                        <div class="showcase-main">
+                            <img src="./Assets/Cinematic film production_flg.avif" alt="Cinematic film production">
+                            <div class="image-shade"></div>
+                            <span class="live-tag"><i class="bi bi-circle-fill"></i> CREATOR'S
+                                PICK</span>
+                            <button class="hero-play preview-video" data-title="Cinematic Film Collection"
+                                aria-label="Preview cinematic collection">
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+                            <div class="showcase-caption">
+                                <small>STOCK FOOTAGE / 001</small>
+                                <h3>Tell stories<br>without limits.</h3>
+                            </div>
+                        </div>
+
+                        <div class="floating-card floating-top">
+                            <i class="bi bi-film"></i>
+                            <div><strong>Stock Footage</strong><small>Ready for your
+                                    edit</small></div>
+                        </div>
+
+                        <div class="floating-card floating-bottom">
+                            <i class="bi bi-stars"></i>
+                            <div><strong>Creative Effects</strong><small>Make every frame
+                                    count</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORY SECTION -->
+    <section class="section-space" id="categories">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">BROWSE BY STYLE</span>
+                    <h2>Explore video categories</h2>
+                </div>
+                <p>Find the right footage and creative tools for your next edit.</p>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <button class="video-category" data-category="Stock Footage">
+                        <i class="bi bi-camera-reels"></i>
+                        <strong>Stock Footage</strong>
+                        <small>Real-world clips</small>
+                    </button>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <button class="video-category" data-category="Templates">
+                        <i class="bi bi-window-stack"></i>
+                        <strong>Templates</strong>
+                        <small>Ready-made edits</small>
+                    </button>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <button class="video-category" data-category="Transitions">
+                        <i class="bi bi-arrow-left-right"></i>
+                        <strong>Transitions</strong>
+                        <small>Smooth movement</small>
+                    </button>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <button class="video-category" data-category="Motion Graphics">
+                        <i class="bi bi-bezier2"></i>
+                        <strong>Motion Graphics</strong>
+                        <small>Animated visuals</small>
+                    </button>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <button class="video-category" data-category="Logo">
+                        <i class="bi bi-badge-3d"></i>
+                        <strong>Logo Reveals</strong>
+                        <small>Brand animations</small>
+                    </button>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <button class="video-category" data-category="Cinematic">
+                        <i class="bi bi-camera-video"></i>
+                        <strong>Cinematic</strong>
+                        <small>Film-style visuals</small>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO ASSETS -->
+    <section class="asset-section section-space" id="videos">
+        <div class="container" id="trending">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">CURATED FOR CREATORS</span>
+                    <h2>Trending video assets</h2>
+                    <p>Creative resources for videos, ads, films and social media.</p>
+                </div>
+
+                <select id="videoFilter" class="form-select video-filter" aria-label="Filter video category">
+                    <option value="all">All Videos</option>
+                    <option value="Stock Footage">Stock Footage</option>
+                    <option value="Templates">Templates</option>
+                    <option value="Transitions">Transitions</option>
+                    <option value="Motion Graphics">Motion Graphics</option>
+                    <option value="Logo">Logo Reveals</option>
+                    <option value="Cinematic">Cinematic</option>
+                </select>
+            </div>
+
+            <div class="row g-4" id="videoGrid">
+
+                <!-- CARD 1 -->
+                <div class="col-md-6 col-lg-4 video-item" data-category="Stock Footage">
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="./Assets/Mountain landscape stock footage_flg.jpg"
+                                alt="Mountain landscape stock footage">
+                            <span class="quality">4K UHD</span>
+                            <button class="thumbnail-play preview-video" data-title="Nature Stock Footage"
+                                aria-label="Preview nature footage">
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+                            <span class="duration">00:24</span>
+                        </div>
+                        <div class="video-info">
+                            <span class="asset-type">STOCK FOOTAGE</span>
+                            <h5>Nature & Mountain Film Pack</h5>
+                            <div class="video-meta"><span><i class="bi bi-star-fill"></i> 4.9
+                                    (124)</span><strong>$18</strong></div>
+                            <button class="preview-link preview-video" data-title="Nature & Mountain Film Pack">
+                                Preview asset <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-md-6 col-lg-4 video-item" data-category="Templates">
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="./Assets/Video editing equipment and production_flg.avif"
+                                alt="Video editing equipment and production">
+                            <span class="quality">HD</span>
+                            <button class="thumbnail-play preview-video" data-title="Modern Video Intro Template"
+                                aria-label="Preview video intro">
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+                            <span class="duration">00:15</span>
+                        </div>
+                        <div class="video-info">
+                            <span class="asset-type">VIDEO TEMPLATES</span>
+                            <h5>Modern Intro & Opener Pack</h5>
+                            <div class="video-meta"><span><i class="bi bi-star-fill"></i> 4.8
+                                    (98)</span><strong>$15</strong></div>
+                            <button class="preview-link preview-video" data-title="Modern Intro & Opener Pack">
+                                Preview asset <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col-md-6 col-lg-4 video-item" data-category="Transitions">
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="./Assets/Creative video editing and color_flg.jpg"
+                                alt="Creative video editing and color">
+                            <span class="quality">4K</span>
+                            <button class="thumbnail-play preview-video" data-title="Dynamic Transition Pack"
+                                aria-label="Preview transitions">
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+                            <span class="duration">00:12</span>
+                        </div>
+                        <div class="video-info">
+                            <span class="asset-type">TRANSITIONS</span>
+                            <h5>Dynamic Cinematic Transitions</h5>
+                            <div class="video-meta"><span><i class="bi bi-star-fill"></i> 4.7
+                                    (76)</span><strong>$12</strong></div>
+                            <button class="preview-link preview-video" data-title="Dynamic Cinematic Transitions">
+                                Preview asset <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="col-md-6 col-lg-4 video-item" data-category="Motion Graphics">
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="./Assets/Colorful creative digital visuals_flg.avif"
+                                alt="Colorful creative digital visuals">
+                            <span class="quality">HD</span>
+                            <button class="thumbnail-play preview-video" data-title="Abstract Motion Graphics"
+                                aria-label="Preview motion graphics">
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+                            <span class="duration">00:20</span>
+                        </div>
+                        <div class="video-info">
+                            <span class="asset-type">MOTION GRAPHICS</span>
+                            <h5>Abstract Motion Backgrounds</h5>
+                            <div class="video-meta"><span><i class="bi bi-star-fill"></i> 4.8
+                                    (143)</span><strong>$20</strong></div>
+                            <button class="preview-link preview-video" data-title="Abstract Motion Backgrounds">
+                                Preview asset <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="col-md-6 col-lg-4 video-item" data-category="Logo">
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="./Assets/Creative workspace for branding_flg.jpg"
+                                alt="Creative workspace for branding">
+                            <span class="quality">HD</span>
+                            <button class="thumbnail-play preview-video" data-title="Logo Reveal Animation"
+                                aria-label="Preview logo reveal">
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+                            <span class="duration">00:08</span>
+                        </div>
+                        <div class="video-info">
+                            <span class="asset-type">LOGO REVEALS</span>
+                            <h5>Clean Brand Logo Reveal</h5>
+                            <div class="video-meta"><span><i class="bi bi-star-fill"></i> 4.9
+                                    (165)</span><strong>$10</strong></div>
+                            <button class="preview-link preview-video" data-title="Clean Brand Logo Reveal">
+                                Preview asset <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="col-md-6 col-lg-4 video-item" data-category="Cinematic">
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="./Assets/Cinematic night sky_flg.avif" alt="Cinematic night sky">
+                            <span class="quality">4K UHD</span>
+                            <button class="thumbnail-play preview-video" data-title="Cinematic Night Sky Footage"
+                                aria-label="Preview cinematic footage">
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+                            <span class="duration">00:30</span>
+                        </div>
+                        <div class="video-info">
+                            <span class="asset-type">CINEMATIC</span>
+                            <h5>Cinematic Night Sky Collection</h5>
+                            <div class="video-meta"><span><i class="bi bi-star-fill"></i> 4.9
+                                    (210)</span><strong>$22</strong></div>
+                            <button class="preview-link preview-video" data-title="Cinematic Night Sky Collection">
+                                Preview asset <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+
+            <p id="emptyMessage" class="empty-message d-none">No matching videos found. Try
+                another search.</p>
+        </div>
+    </section>
+
+    <!-- CREATOR CTA -->
+    <section class="creator-section">
+        <div class="container">
+            <div class="creator-banner">
+                <div class="creator-icon"><i class="bi bi-camera-reels-fill"></i></div>
+                <div class="creator-copy">
+                    <span>FOR FILMMAKERS & CREATORS</span>
+                    <h2>Your next project deserves a better frame.</h2>
+                    <p>Discover creative video resources and make every second count.</p>
+                </div>
+                <a href="#videos" class="creator-button">Browse Video Assets <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREVIEW MODAL -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content video-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalTitle">Video Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-preview-art"><i class="bi bi-play-circle"></i></div>
+                    <p class="mt-3 mb-0">
+                        This is a demo preview. Connect a real video file or licensed preview
+                        URL to play the selected asset here.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------- Footer Tag section --------------->
+    <!-- PREMIUM ENVATO FOOTER -->
+    <footer class="lux-footer">
+
+        <!-- Newsletter -->
+        <div class="container">
+            <div class="lux-newsletter">
+                <div class="newsletter-content">
+                    <span class="lux-eyebrow">THE CREATIVE CLUB</span>
+                    <h2>Make your next idea<br><span>extraordinary.</span></h2>
+                    <p>Get creative inspiration, new resources and exclusive updates in your
+                        inbox.</p>
+                </div>
+
+                <form class="newsletter-form" id="newsletterForm">
+                    <label for="newsletterEmail">Join our creative community</label>
+                    <div class="newsletter-input">
+                        <input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+                        <button type="submit" aria-label="Subscribe">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </div>
+                    <small id="newsletterMessage">No spam. Just creative inspiration.</small>
+                </form>
+            </div>
+
+            <div class="lux-divider"></div>
+
+            <!-- Main footer columns -->
+            <div class="row gy-5 lux-footer-main">
+
+                <div class="col-lg-4 col-md-12">
+                    <a href="lux-logo.html" class="lux-logo">
+                        <span class="logo-symbol"><i class="bi bi-gem"></i></span>
+                        <span>envato<small>market</small></span>
+                    </a>
+
+                    <p class="lux-description">
+                        A world of creative possibilities. Discover premium digital
+                        assets and tools that help transform imagination into reality.
+                    </p>
+
+                    <div class="lux-socials">
+                        <a href="https://www.instagram.com/" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" aria-label="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+
+                    <div class="trust-note">
+                        <i class="bi bi-shield-check"></i>
+                        <span>Made for people who create.</span>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-2 col-md-4">
+                    <h5>Discover</h5>
+                    <ul>
+                        <li><a href="Web-Templetes.html">Web Templates</a></li>
+                        <li><a href="Wordpress.html">WordPress</a></li>
+                        <li><a href="Video.html">Video</a></li>
+                        <li><a href="Graphics.html">Graphics</a></li>
+                        <li><a href="Audio.html">Audio</a></li>
+                        <li><a href="3D-Assets.html">3D Assets</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 col-md-4">
+                    <h5>Marketplace</h5>
+                    <ul>
+                        <li><a href="Browse-Items.html">Browse Items</a></li>
+                        <li><a href="Featured-Files.html">Featured Files</a></li>
+                        <li><a href="New-Releases.html">New Releases</a></li>
+                        <li><a href="Popular-Items.html">Popular Items</a></li>
+                        <li><a href="Creative-Tools.html">Creative Tools</a></li>
+                        <li><a href="Collection.html">Collections</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 col-md-4">
+                    <h5>Community</h5>
+                    <ul>
+                        <li><a href="Become-an-Author.html">Become an Author</a></li>
+                        <li><a href="Creator-stories.html">Creator Stories</a></li>
+                        <li><a href="Forums.html">Forums</a></li>
+                        <li><a href="Help-Center.html">Help Center</a></li>
+                        <li><a href="Contact-Support.html">Contact Support</a></li>
+                        <li><a href="Our-Community.html">Our Community</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 col-md-4">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="OurMission.html">Our Mission</a></li>
+                        <li><a href="Careers.html">Careers</a></li>
+                        <li><a href="Affiliate-Program.html">Affiliate Program</a></li>
+                        <li><a href="Privacy-Policy.html">Privacy Policy</a></li>
+                        <li><a href="erms & Conditions.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Premium bottom bar -->
+            <div class="lux-bottom">
+                <p>© <span id="currentYear"></span> Envato Market Demo. All rights reserved.</p>
+
+                <div class="bottom-links">
+                    <a href="Privacy.html">Privacy</a>
+                    <a href="Terms.html">Terms</a>
+                    <a href="Cookies.html">Cookies</a>
+                </div>
+
+                <button class="back-top" id="backToTop">
+                    Back to top <i class="bi bi-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="Emarket.js"></script>
